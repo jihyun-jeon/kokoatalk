@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>friends</title>
+    <link rel="stylesheet" href="0.util.css" />
+  </head>
+  <body>
+    <!-- 1.상태바 -->
+    <div class="status-bar">
+      <div class="status-bar-column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar-column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar-column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-2x"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- 2.screen-header -->
+    <div class="screen-header">
+      <h1 class="screen-header_title">Friends</h1>
+      <div class="screen-header_icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </div>
+
+    <!-- 3.friends'Names display -->
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i>
+      Friends'Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <!-- 4.user profile ~ channel -->
+    <main class="friends-screen-main">
+      <!-- "profile" -->
+      <div class="user-component">
+        <div class="user-component-column">
+          <img
+            class="user-component-avatar-xl"
+            src="https://cdn-icons-png.flaticon.com/512/59/59170.png"
+          />
+          <div class="user-component-text">
+            <h4 class="user-component-title">Jihyun</h4>
+          </div>
+        </div>
+        <!--상태메세지-->
+        <div class="user-component-column">
+          <div class="use-message">
+            <span>ㄴr는 ㄱr끔 눈물을 흘린ㄷr...</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- "channel" -->
+      <div class="friends-screen-channel">
+        <!--1)channel line-->
+        <div class="friends-screen-channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <!--channel prefile-->
+        <div class="user-component">
+          <div class="user-component-column">
+            <img
+              class="user-component-avatar-sm"
+              src="https://cdn-icons-png.flaticon.com/512/59/59170.png"
+            />
+            <div class="user-component-text">
+              <h4 class="user-component-title not-bold">Channel</h4>
+            </div>
+          </div>
+          <!--상태메세지-->
+          <div class="user-component-column">
+            <span>2</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 5.navigation bar 하단 4개 아이콘-->
+    <!-- 단축키: nav>ul>li*4>a -->
+    <nav class="nav">
+      <ul class="nav-ul">
+        <li class="nav-libtn">
+          <a href="#" class="nav-alink">
+            <i class="fas fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav-libtn">
+          <a href="#" class="nav-alink">
+            <i class="far fa-comment fa-2x"></i>
+            <span class="notification">2</span>
+          </a>
+        </li>
+        <li class="nav-libtn">
+          <a href="#" class="nav-alink">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav-libtn">
+          <a href="#" class="nav-alink">
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+            <span class="dot"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/a7d268264a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

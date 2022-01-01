@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      h1 {
+        color: blue;
+        text-decoration: underline;
+      }
+    </style>
+    <!--css는 위에서부터 아래로 읽히고, 결국 적용되는 건 "가장 마지막 코드"임. 따라서 tomato색으로!-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 1.대부분 blobk box이므로, inline을 외우는거로 초첨두기! -->
+    <!--<h2 id="hello">hello</h2>-->
+    <!-- 2.semantic tag : 의미가 있는 박스 ex)header,main,footer // div와 비슷, 블록박스임
+           non-semantic tag : 의미가 없는 박스 ex) div,span
+           <div id="header"> 이렇게 해도 되지만 header를 쓰면 더 의미있는 태그를 명확하게 사용할 수 있음.  -->
+    <!-- <header></header>
+    <main></main>
+    <footer></footer> -->
+
+    <!-- 3.태그안의 속성값은 다  큰따옴표("")로 묶어야 함
+           input의 submit 버튼을 누르면 form을 제출하게 됨. 따라서 페이지가 새로고침 되는 것임-->
+    <!-- <form>
+      <label for="text">First name</label>
+      <input type="text" id="text" required />
+
+      <label for="password">First name</label>
+      <input type="password" id="password" minlength="9" />
+
+      <label for="sub">First name</label>
+      <input type="submit" value="제출!" id="sub" />
+    </form>
+    -->
+    <!--4. self-closing-tag임. 이미지는 안에 콘텐트 내용이 없어서 -->
+    <!--<a href="http://www.naver.com" target="_blank">go to naver</a>
+    <img src="iu.jpeg" id="iuImg" /> -->
+    <div></div>
+    <!--5. block, inline
+    :inline요소는 높이와 너비가 없음.
+    :따라서 margin은 좌,우에만 적용됨 (위,아래 margin은 가질 수 없음)
+    :padding은 사방에 적용ㅇ
+    -->
+
+    <span class="spanEl">Hello</span>
+    <script type="module" src="/practice.js"></script>
+  </body>
+</html>

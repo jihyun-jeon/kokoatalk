@@ -1,0 +1,68 @@
+/* 사진,이름,상태명 - 기본util */
+.user-component,
+.user-component_column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.user-component_column:last-child {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component {
+  /* 두 column을 분리시킴(2>가 오른쪽으로 가게 됨) */
+  justify-content: space-between;
+}
+
+.user-component_avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 27px;
+  background-color: rgba(0, 136, 255, 0.817);
+  margin-right: 20px;
+}
+
+.user-component_title {
+  font-weight: 600;
+  font-size: 22px;
+}
+.user-component_subtitle {
+  margin-top: 8px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+}
+
+/* friends에 있는 본인 프로필 */
+.user-component_avatar-xl {
+  width: 80px;
+  height: 80px;
+  border-radius: 27px;
+  background-color: rgba(0, 136, 255, 0.817);
+  margin-right: 30px;
+}
+.user-component_avatar-sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+  background-color: rgba(0, 136, 255, 0.817);
+}
+
+.user-component_title-not-bold {
+  font-weight: 400;
+}
+
+/* 위에껀 다 use-component util임. 따라서 이 코드는 friends_display에 써줌*/
+/*
+.friends-screen_channel {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.friends-screen_channel-header {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+*/

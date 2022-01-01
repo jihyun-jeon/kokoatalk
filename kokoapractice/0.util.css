@@ -1,0 +1,13 @@
+@import '0.reset.css';
+@import '0.variables.css';
+@import '2/2.status-bar.css';
+@import '2/2.input-loginform.css';
+@import '3/3.friends-icon.css';
+@import '3/3.friendsNames-display.css';
+@import '3/3.nav-bar.css';
+
+:root {
+  --yellow: #fae100;
+  --basecolor: gray;
+  --horizontal-space: 25px;
+}

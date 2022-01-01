@@ -1,0 +1,22 @@
+@import './0.reset.css';
+@import './0.variables.css';
+@import './2/2.status-bar.css';
+@import './2/2.input-loginform.css';
+@import './3/3.nav._bar.css';
+@import './3/3.screen-header.css';
+@import './3/3.friends_display.css';
+@import './3/3.user-profile.css';
+
+input:focus {
+  /* :focus - input을 클릭해서 focus 됐을떄 이 css가 나타나는 것임*/
+  outline: none;
+}
+
+.nav_alink {
+  /*a링크의 기본 색깔은 블루임. 따라서 아이콘 색을 변경해주기*/
+  color: #2e363e;
+  text-decoration: none;
+}
+body {
+  color: #393e2e;
+}

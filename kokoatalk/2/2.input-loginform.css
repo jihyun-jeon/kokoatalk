@@ -1,0 +1,69 @@
+/* <Welcome> */
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-header_title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.welcome-header_text {
+  width: 60%;
+  /* color: gray; */
+  opacity: 0.4; /*불투명도를 설정*/
+}
+
+/* <form> */
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  padding: 15px 0px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  border: none;
+}
+
+/* input 타입이 submit이 아닐떄만 이게 실행됨. []:attribute selector 특성 선택자 */
+#login-form input:not([type='submit']) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+  /* 트랜지션의 속성을 한꺼번애 표기하는 법: transition:대상값,진행시간,속도,시작시간
+  ease-in-out : 느리게 시작하고 느리게 끝남
+*/
+}
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+/* <submit> */
+/* input 타입이 submit 일떄만 이게 실행됨. []:attribute selector 특성 선택자 */
+#login-form input[type='submit'] {
+  background-color: var(--yellow);
+  border-radius: 10px;
+  cursor: pointer; /* 마우스 대면 마우스 모양이 바뀜 */
+  padding: 20px 0px;
+}
+
+/* <a태그 text> */
+#login-form a {
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  /* inherit-상속
+    :부모태그의 color를 받아오는 것임(a태그의 부모태그는 #login-form)
+    :#login-form의 color는 기본값인 "블랙"임
+    */
+}

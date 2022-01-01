@@ -1,0 +1,49 @@
+.nav {
+  position: fixed;
+  bottom: 0px; /*position으로 기준 위치를 정한 뒤, left,right,top,bottom으로 속성값을 지정하면 됨*/
+  width: 100%;
+}
+.nav-ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fafaf9;
+  border: rgba(0, 0, 0, 0.2) 1px solid;
+}
+
+.nav-alink {
+  position: relative;
+}
+
+.nav-libtn i {
+  padding: 30px 0px;
+  color: black;
+  font-size: 35px;
+}
+
+.notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+}
+
+.dot {
+  background-color: tomato;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  color: white;
+
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
+}

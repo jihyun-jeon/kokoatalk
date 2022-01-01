@@ -1,0 +1,37 @@
+/* 1.div를 가로 정렬 후 가운데로 몸 */
+.status-bar {
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+  position: fixed; /* 스크롤을 내려도 상단에 상태바가 고정되도록 */
+  top: 0px;
+  width: 100%;
+}
+
+/* 2.각 div의 너비를 똑같이 지정*/
+.status-bar_column {
+  width: 33%;
+}
+
+/* 4.시간을 가운데로 지정 //nth-child() :형제 사이에서의 순서에 따른 요소를 선택 */
+.status-bar_column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+/* 5.배터리 항목을 맨 오른쪽으로 정렬 */
+.status-bar_column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* 6.배터리와 전기아이콘 사이에 여백줌 */
+.status-bar_column .fa-battery-full {
+  padding: 0px 5px;
+}
+
+/* 3.no service와 wifi의 간격 조절 */
+.status-bar_column:first-child span {
+  margin-right: 5px;
+}

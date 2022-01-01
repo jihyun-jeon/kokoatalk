@@ -1,0 +1,92 @@
+/* Friends'Names Display */
+#friends-display-link {
+  display: block;
+  padding: 20px 0px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 18px;
+}
+
+.fa-info-circle,
+.fa-chevron-right {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+/* profile */
+
+.user-component {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-component-column {
+  display: flex;
+  align-items: center;
+}
+
+.user-component-column:first-child {
+  margin-left: 25px;
+}
+.user-component-column:last-child {
+  margin-right: 25px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+.user-component-avatar-xl {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(0, 174, 255, 0.845);
+  border-radius: 40px;
+}
+
+.user-component-avatar-sm {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 174, 255, 0.845);
+  border-radius: 30px;
+}
+.user-component-text {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* channel line */
+.friends-screen-channel {
+  margin-top: 25px;
+}
+
+.friends-screen-channel-header {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  border-color: rgba(0, 0, 0, 0.2);
+  margin: 0px 25px;
+  padding-top: 20px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.not-bold {
+  font-weight: 10;
+}
+
+.user-component-column i {
+  padding-left: 5px;
+}
+
+.use-message {
+  padding-right: 15px;
+}
+
+.use-message span {
+  border: 1px none;
+  border-radius: 10px;
+  padding: 8px 30px;
+  color: rgba(0, 0, 0, 0.808);
+  background-color: rgb(245, 241, 241);
+}

@@ -1,0 +1,57 @@
+.nav {
+  padding: 20px 50px;
+  background-color: #fafaf9;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+
+  /* 질문1) 아래로 fixed하면 왜 ul 정렬이 깨지는지?? */
+  /*position를 쓰면: 브라우저 창 기준으로 위치를 배치하게 됨. */
+  position: fixed; /*스크롤을 한다해도 nav가 고정된 위치에 있게 됨 */
+  bottom: 0; /* 브라우처 창 기준으로 left,right,top,bottom 지정*/
+  width: 100%;
+  box-sizing: border-box;
+  /* width를 쓰면 배열이 깨지는 이유:
+  :width는 content의 너비를 지정하는 것임. 따라서 콘텐츠 크기 100 + padding left,right값 50px을 더하면 너비는 100%보다 더 넓어지는 것임.
+  */
+
+  /*
+  따라서 border-box를 지정하여 width가 테두리 영역까지 포함해서 width 너비를 지정하게끔 설정한 것임.
+  실제 content 너비는 100%보다 작게 됨.
+  */
+}
+
+.nav_ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_libtn {
+  /* */
+}
+
+.nav_alink {
+  position: relative;
+}
+
+.nav_notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex; /* span태그 자체가 컨테이너고 1이 그 안에있는 항목이 됨 */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute; /* 가장 가까운 relative를 가진 부모 기준으로 left,bottom이 움직이게 됨 */
+  left: 15px;
+  bottom: 15px;
+}
+.nav_dot {
+  background-color: tomato;
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  position: absolute;
+  left: 35px;
+  bottom: 30px;
+}
