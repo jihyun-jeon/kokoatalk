@@ -1,0 +1,69 @@
+.icon {
+  color: inherit;
+}
+.location {
+  left: 123px;
+}
+
+.number-exclamation {
+  display: flex;
+}
+.number-exclamation i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  border: 1px red solid;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+.more-screen .icons-row {
+  margin-top: 35px;
+}
+
+.more-suggestions {
+  margin-top: 30px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.more-suggestions-title {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.more-suggestions-icons {
+  display: flex;
+}
+
+.more-suggestions-icon {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-suggestions-icons-icon-image {
+  background-color: var(--yellow);
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.more-suggestions-icons-icon-image i {
+  font-size: 30px; /*icon도 텍스트임*/
+  color: white;
+}
+
+.more-suggestions-icons-icon-text {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}

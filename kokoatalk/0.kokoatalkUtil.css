@@ -1,11 +1,19 @@
 @import './0.reset.css';
 @import './0.variables.css';
+
 @import './2/2.status-bar.css';
 @import './2/2.input-loginform.css';
 @import './3/3.nav._bar.css';
 @import './3/3.screen-header.css';
 @import './3/3.friends_display.css';
 @import './3/3.user-profile.css';
+@import './4/4.chat-screen.css';
+@import '4.badge.css';
+@import './5./5.find.css';
+@import './5./5.reccomend.css';
+@import './6/more.css';
+@import './7/setting.css';
+@import './8/chatting.css';
 
 input:focus {
   /* :focus - input을 클릭해서 focus 됐을떄 이 css가 나타나는 것임*/
@@ -19,4 +27,8 @@ input:focus {
 }
 body {
   color: #393e2e;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }

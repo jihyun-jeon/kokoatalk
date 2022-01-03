@@ -24,24 +24,11 @@
   justify-content: space-between;
 }
 
-.nav_libtn {
-  /* */
-}
-
 .nav_alink {
   position: relative;
 }
 
 .nav_notification {
-  background-color: tomato;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  display: flex; /* span태그 자체가 컨테이너고 1이 그 안에있는 항목이 됨 */
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 600;
   position: absolute; /* 가장 가까운 relative를 가진 부모 기준으로 left,bottom이 움직이게 됨 */
   left: 15px;
   bottom: 15px;

@@ -12,4 +12,5 @@ varP(--yellow)로 전역변수 처럼 쓰이게 됨.
 :root {
   --yellow: #fae100;
   --horizontal-space: 25px;
+  --bottonline: 1px solid rgba(0, 0, 0, 0.3);
 }

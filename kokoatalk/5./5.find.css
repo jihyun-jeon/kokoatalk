@@ -1,0 +1,29 @@
+.screen-header_icons:last-child {
+  position: relative;
+}
+.coglocation {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: -10px;
+  left: 70px;
+}
+
+.icons-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+.icons-row-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons-row-icon i {
+  font-size: 25px;
+}
+
+.icons-row-icon span {
+  margin-top: 15px;
+}

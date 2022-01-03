@@ -1,0 +1,107 @@
+.recommended-friends {
+  border-top: var(--bottonline);
+  border-bottom: var(--bottonline);
+  padding: 25px 0px;
+}
+
+.recommended-friends-title,
+.recommended-friends span {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 18px;
+}
+
+.recommended-friends span {
+  display: block;
+  text-align: center;
+  margin: 100px 0px;
+}
+
+.open-chat-header {
+  margin: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 18px;
+}
+
+/* 첫번쨰 column */
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.open-post-title {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+
+.open-post-hashtags {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(119, 114, 114, 0.8);
+}
+.open-post-members {
+  display: flex;
+  align-items: center;
+  padding-top: 7px;
+}
+
+.open-post-members img {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(89, 195, 203, 0.548);
+  border-radius: 30%;
+  margin-right: 5px;
+}
+
+.open-post-members-count {
+  font-size: 18px;
+  color: rgba(119, 114, 114, 0.8);
+}
+
+.open-post-members .divider {
+  width: 2px;
+  height: 14px;
+  background-color: rgba(119, 114, 114, 0.8);
+  margin: 0px 5px;
+}
+
+.open-post-members-status {
+  color: #ffb0e0;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+/* 두번쨰 column */
+.open-post-photo {
+  position: relative; /* relative는 부모태그가 되야 함*/
+}
+
+.open-post-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.open-post-heart {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0.7;
+  font-size: 15px;
+  padding: 5px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.open-post-heart span {
+  margin-left: 3px;
+}
+
+.listDivide {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+  margin: 20px 0px;
+}

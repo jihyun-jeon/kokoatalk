@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find</title>
+    <link rel="stylesheet" href="0.kokoatalkUtil.css" />
+    <!--단축키 link:css-->
+  </head>
+  <body>
+    <!-- 1.status-bar -->
+    <div class="status-bar">
+      <div class="status-bar_column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar_column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar_column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-2x"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- 2.screen-header -->
+    <div class="screen-header">
+      <h1 class="screen-header_title">Find</h1>
+      <div class="screen-header_icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span
+          ><i class="fas fa-cog fa-lg"></i>
+          <span class="badge coglocation"></span>
+        </span>
+      </div>
+    </div>
+
+    <main class="main-screen">
+      <!-- 3.find icons -->
+      <div class="icons-row">
+        <div class="icons-row-icon">
+          <i class="fas fa-qrcode"></i>
+          <span>Qr code</span>
+        </div>
+        <div class="icons-row-icon">
+          <i class="far fa-address-book"></i><span>Add by Contacts</span>
+        </div>
+        <div class="icons-row-icon">
+          <i class="fas fa-fingerprint"></i><span>Add by ID</span>
+        </div>
+        <div class="icons-row-icon">
+          <i class="far fa-envelope"></i><span>Invite</span>
+        </div>
+      </div>
+      <!-- 4.recommend -->
+      <div class="recommended-friends">
+        <h6 class="recommended-friends-title">Recommended Friends</h6>
+        <span>You have no recommend friends</span>
+      </div>
+      <!-- 5.open chat header -->
+      <div class="open-chat-header">
+        <span>Open Chat</span>
+        <span
+          >Go to openChat Home <i class="fas fa-chevron-right fa-xs"></i
+        ></span>
+      </div>
+
+      <!-- 6.open chat list 1-->
+      <div class="open-post">
+        <!-- 1)list 왼쪽 -->
+        <div class="open-post-column">
+          <h5 class="open-post-title">#BTS</h5>
+          <h6 class="open-post-hashtags">#bts#army#friends</h6>
+          <div class="open-post-members">
+            <img src="https://cdn-icons-png.flaticon.com/512/59/59170.png" />
+            <span class="open-post-members-count">802 members</span>
+            <div class="divider"></div>
+            <span class="open-post-members-status">Active</span>
+          </div>
+        </div>
+        <!-- 2)list 오른쪽 -->
+        <div class="open-post-column">
+          <div class="open-post-photo">
+            <img
+              src="https://www.netsafe.org.nz/wp-content/uploads/2019/12/2020-Reskin_image-based-abuse.png"
+            />
+            <div class="open-post-heart">
+              <i class="fas fa-heart fa-xs"></i>
+              <span>326</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--list 구분선-->
+      <div class="listDivide"></div>
+      <!-- 6.open chat list 2-->
+      <div class="open-post">
+        <!-- 1)list 왼쪽 -->
+        <div class="open-post-column">
+          <h5 class="open-post-title">#BTS Gang~</h5>
+          <h6 class="open-post-hashtags">
+            #englishonly#ipurpleyou#jimin#taeta...
+          </h6>
+          <div class="open-post-members">
+            <img src="https://cdn-icons-png.flaticon.com/512/59/59170.png" />
+            <span class="open-post-members-count">299 members</span>
+            <div class="divider"></div>
+            <span class="open-post-members-status">Active</span>
+          </div>
+        </div>
+        <!-- 2)list 오른쪽 -->
+        <div class="open-post-column">
+          <div class="open-post-photo">
+            <img
+              src="https://www.netsafe.org.nz/wp-content/uploads/2019/12/2020-Reskin_image-based-abuse.png"
+            />
+            <div class="open-post-heart">
+              <i class="fas fa-heart fa-xs"></i>
+              <span>215</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--7.nav bar-->
+    <nav class="nav">
+      <ul class="nav_ul">
+        <li class="nav_libtn">
+          <a href="3.friends.html" class="nav_alink"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav_libtn">
+          <a href="4.chat.html" class="nav_alink">
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav_libtn">
+          <a href="5.find.html" class="nav_alink"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav_libtn">
+          <a href="6.more.html" class="nav_alink">
+            <span class="nav_dot"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <script
+      src="https://kit.fontawesome.com/a7d268264a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
