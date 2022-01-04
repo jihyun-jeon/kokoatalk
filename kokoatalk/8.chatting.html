@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="0.kokoatalkUtil.css" />
     <!--단축키 link:css-->
   </head>
-  <body>
+  <body id="chat-screen">
     <!-- 1.status-bar -->
     <div class="status-bar">
       <div class="status-bar_column">
@@ -25,15 +25,15 @@
       </div>
     </div>
 
-    <!--2.setting bar-->
+    <!--2.Friends name bar-->
     <div class="alt-header">
       <div class="alt-header-column">
-        <a class="icon" href="6.more.html"
+        <a class="icon" href="4.chat.html"
           ><i class="fas fa-angle-left fa-2x"></i
         ></a>
       </div>
       <div class="alt-header-column">
-        <h1 class="alt-header-column-title">Jhonny</h1>
+        <h1 class="alt-header-column-title">Johnny</h1>
       </div>
       <div class="alt-header-column">
         <span><i class="fas fa-search fa-2x"></i></span>
@@ -42,7 +42,52 @@
     </div>
 
     <!--3.lists-->
-    <main class="main-screen"></main>
+    <main class="main-screen main-chat">
+      <div class="chat-timestamp">Tuesday,June 30,2020</div>
+      <!--income message-->
+      <div class="message-row">
+        <img src="https://cdn-icons-png.flaticon.com/512/59/59170.png" />
+        <div class="message-row-content">
+          <span class="message-author">johnny</span>
+          <div class="message-info">
+            <span class="message-bubble">Hi!</span>
+            <span class="message-time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <!--income message-->
+      <div class="message-row">
+        <img src="https://cdn-icons-png.flaticon.com/512/59/59170.png" />
+        <div class="message-row-content">
+          <span class="message-author">johnny</span>
+          <div class="message-info">
+            <span class="message-bubble">Hi!</span>
+            <span class="message-time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <!--send message-->
+      <div class="message-row message-row-own">
+        <div class="message-row-content">
+          <div class="message-info">
+            <span class="message-bubble">Hi 민횽앙!</span>
+            <span class="message-time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--입력창-->
+    <form class="reply">
+      <!--두개의 콜룸이 있음: 1.+버튼 2.입력창~-->
+      <div class="reply-column">
+        <i class="fas fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply-column">
+        <input type="texy" placeholder="Write a message..." />
+        <i class="far fa-smile-wink fa-lg"> </i>
+        <button type="button"><i class="fas fa-arrow-up"></i></button>
+      </div>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/a7d268264a.js"

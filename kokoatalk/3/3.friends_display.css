@@ -25,3 +25,34 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+
+/* splash-screen */
+@keyframes hideSplashScreen {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden; /*hidden:이 html요소를 무시하게됨(이거 안써주면 밑에 nav클릭이 안됨). 실제 html요소가 없어지는건 아님 */
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute; /* relative 지정해주지 않으면 body기준으로 됨 */
+  width: 100vw; /*화면너비의 100%*/
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hideSplashScreen 2s ease-in-out forwards;
+  /*
+  forwards: 마지막 애니메이션 값을 기억하고 있도록 하기위해서(to에 입력한 부분이 기억됨)
+  */
+  animation-delay: 0.1s; /*0.1초 뒤에 애니메이션 시작됨*/
+}
+
+#splash-screen i {
+  font-size: 120px;
+}

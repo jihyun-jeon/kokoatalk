@@ -13,7 +13,7 @@
 }
 
 .alt-header-column:first-child {
-  margin-right: auto;
+  margin-right: auto; /* margin:0px auto <-좌우 여백을 똑같이 배분하게 됨 */
 }
 
 .alt-header-column:last-child {
